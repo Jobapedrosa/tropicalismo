@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function(){
     const opcoesDeAcessibilidade = document.getElementById('opcoes-acessibilidade')
  
     botaoDeAcessibilidade.addEventListener('click', function (){
-     botaoDeAcessibilidade.classList.toggle('rotacao-botao');
-     opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
+    botaoDeAcessibilidade.classList.toggle('rotacao-botao');
+    opcoesDeAcessibilidade.classList.toggle('apresenta-lista')
  
-     const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
-     botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
+    const botaoSelecionado = botaoDeAcessibilidade.getAttribute('aria-expanded') === 'true';
+    botaoDeAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado)
    
     })
  
